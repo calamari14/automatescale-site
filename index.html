@@ -1,150 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutomateScale | AI Agency Systems</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutomateScale | AI-Powered Agency Automations</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #000;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    section {
-      background: white;
-      padding: 40px;
-      margin-bottom: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #111;
-    }
-    ul li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 15px;
-      text-align: left;
-    }
-    th {
-      background: #f3f3f3;
-    }
-    iframe {
-      width: 100%;
-      height: 2000px;
-      border: none;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #eee;
-      font-size: 14px;
-      color: #555;
-    }
-    .cta {
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+    header, section, footer { padding: 60px 20px; max-width: 960px; margin: auto; }
+    header { background: #fff; text-align: center; }
+    header h1 { font-size: 40px; margin-bottom: 10px; }
+    header p { font-size: 20px; color: #666; }
+    .cta-button {
       display: inline-block;
-      background: #000;
-      color: #fff;
-      padding: 14px 28px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
       margin-top: 20px;
+      padding: 14px 28px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
     }
-    .center {
-      text-align: center;
+    section { background: #fff; margin-top: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    h2 { margin-top: 0; font-size: 28px; }
+    ul { padding-left: 20px; font-size: 18px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 16px; }
+    th, td { border: 1px solid #ddd; padding: 14px; text-align: left; }
+    td a.button-link {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
     }
+    footer { text-align: center; font-size: 14px; color: #999; padding: 40px 20px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>AI Systems for Busy Marketing Agencies</h1>
-    <p>We build and automate your lead follow-up, reports, and internal tasks — no meetings, no stress.</p>
-    <a href="#form" class="cta">Start My Automation Setup</a>
+    <h1>AI-Powered Automations for Marketing Agencies</h1>
+    <p>We automate your lead follow-up, reporting, and internal tasks — no calls, no stress.</p>
+    <a href="#form" class="cta-button">Start My Automation Setup</a>
   </header>
 
-  <div class="container">
-    <section>
-      <h2>What We Automate</h2>
-      <ul>
-        <li>✅ AI-generated weekly client updates</li>
-        <li>✅ Instant lead follow-up emails</li>
-        <li>✅ Automated reports via Google Sheets, Slack, Notion</li>
-        <li>✅ Task alerts synced to Trello, Notion, or ClickUp</li>
-        <li>✅ CRM or lead pipeline automations (optional)</li>
-      </ul>
-    </section>
+  <section>
+    <h2>What We Automate</h2>
+    <ul>
+      <li>📬 Weekly AI-written client updates</li>
+      <li>🤖 Instant lead follow-up emails</li>
+      <li>📊 Automated client reporting (Google Sheets, Slack, Notion)</li>
+      <li>✅ Internal task alerts (ClickUp, Trello, Notion)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Pricing Plans</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Plan</th>
-            <th>Price</th>
-            <th>Includes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Starter</strong></td>
-            <td>$297/mo</td>
-            <td>2 workflows, 1 report, weekly client updates</td>
-          </tr>
-          <tr>
-            <td><strong>Growth</strong></td>
-            <td>$497/mo</td>
-            <td>4 workflows, lead follow-up, task alerts</td>
-          </tr>
-          <tr>
-            <td><strong>Custom</strong></td>
-            <td>$997+</td>
-            <td>Slack dashboards, full setup, up to 10+ workflows</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <section>
+    <h2>Pricing Plans</h2>
+    <table>
+      <tr>
+        <th>Plan</th>
+        <th>Price</th>
+        <th>What’s Included</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Starter</td>
+        <td>$297/mo</td>
+        <td>2 workflows, 1 report, weekly client updates</td>
+        <td><a class="button-link" href="https://gallucci24.gumroad.com/l/dsiork" target="_blank">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td>Growth</td>
+        <td>$497/mo</td>
+        <td>4 workflows, lead follow-up, task alerts</td>
+        <td><a class="button-link" href="https://gallucci24.gumroad.com/l/wtkzi" target="_blank">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td>Custom</td>
+        <td>$997+</td>
+        <td>Slack dashboards, full setup, advanced automations</td>
+        <td><a class="button-link" href="https://gallucci24.gumroad.com/l/lvnhf" target="_blank">Buy Now</a></td>
+      </tr>
+    </table>
+  </section>
 
-    <section id="form">
-      <h2>Start Your Automation Setup</h2>
-      <p class="center">Fill out the form below — no calls, no meetings. Just quick info so we can build it for you in 3–5 days.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbznzLgbSSx56yLpJOfqDdV8vSwkHx26ezgPGi5nKggoGUUg/viewform?embedded=true">Loading…</iframe>
-    </section>
-  </div>
+  <section id="form">
+    <h2>Start Your Automation Setup</h2>
+    <p>We use this form to gather the details we need to build your automations — no calls, no meetings. Just fill it out, and we’ll handle the rest within 3–5 days.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbznzLgbSSx56yLpJOfqDdV8vSwkHx26ezgPGi5nKggoGUUg/viewform?embedded=true" width="100%" height="1800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
   <footer>
-    <p>&copy; 2025 AutomateScale – Built with AI, Zapier, and No-Code tools.</p>
+    <p>&copy; 2025 AutomateScale. Built with GPT, Zapier & No-Code.</p>
   </footer>
 </body>
 </html>
