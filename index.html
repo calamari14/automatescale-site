@@ -29,6 +29,35 @@
     .right-decor {
       right: 0;
     }
+    .floating-icons {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 999;
+      transform: translateY(-50%);
+    }
+    .floating-icons img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,0.2));
+      transition: transform 0.3s ease;
+    }
+    .floating-icons img:hover {
+      transform: scale(1.2);
+    }
+    @keyframes pulseBackground {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    body {
+      background: linear-gradient(-45deg, #f4f7fa, #e6edf3, #dce6f1, #f7f9fb);
+      background-size: 400% 400%;
+      animation: pulseBackground 20s ease infinite;
+    }
     header, section, footer {
       padding: 60px 20px;
       max-width: 1000px;
@@ -109,6 +138,11 @@
 <body>
   <div class="background-decor left-decor"></div>
   <div class="background-decor right-decor"></div>
+  <div class="floating-icons">
+    <a href="#form"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Form"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Chat"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/9068/9068720.png" alt="Automation"></a>
+  </div>
 
   <header>
     <h1>AI-Powered Automations for Marketing Agencies</h1>
